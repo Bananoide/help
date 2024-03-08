@@ -1,0 +1,73 @@
+body{
+    background-color:plum; 
+    padding: 10px; 
+    text-shadow: 
+}
+.encabezado{
+    background-image: url(morado.png.html);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 80px;
+    text-align:center;
+    height: 20%;
+    color:plum;
+    background-color:purple;
+}
+
+.encabezado{
+    font-size: 90px;
+    color:black;
+    font-family: catbo;
+    text-shadow: #f7d5be -2px 5px;
+}
+.menu{
+    background-color:purple;
+    overflow:hidden;
+}
+.menu a{
+    float: left;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+.menu a:hover{
+    color:black;
+    background-color: palevioletred;
+}
+.izquierdo{
+    float: left;
+    width: 60%;
+    background-color:plum;
+}
+.derecha{
+    float: left;
+    width: 70%;
+    background-color: red;
+    padding-left: 50px;
+}
+.cuerpo::after{
+    content: "";
+    display:table;
+    clear:both;
+    
+}
+.pie{
+    padding: 10px;
+    margin-top: 0px;
+    background-color:palevioletred;
+    text-align: center;  
+}
+@media screen and (max-width> 800px){
+    .izquierda, .derecha{
+        width:100%;
+        padding: 0;    
+    }
+}
+@media screen and (max-width:400px){
+    .menu a {
+         float:none;
+        width:100%;
+    }
+}
